@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Yoga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Studio Yoga</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#classes">Lezioni</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Trova il tuo equilibrio</h1>
+            <p>Unisciti alla nostra comunità di yoga e scopri i benefici per corpo e mente.</p>
+            <button>Scopri di più</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Chi Siamo</h2>
+            <div class="about-content">
+                <img src="yoga-about.jpg" alt="Studio Yoga">
+                <p>Il nostro studio offre un ambiente accogliente e rilassante, perfetto per praticare yoga a tutti i livelli. I nostri istruttori qualificati ti guideranno in un percorso di benessere personale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <h2>Le Nostre Lezioni</h2>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <img src="yoga-class-1.jpg" alt="Yoga Principianti">
+                    <h3>Yoga per Principianti</h3>
+                    <p>Ideale per chi inizia a praticare yoga e vuole imparare le basi.</p>
+                    <button>Prenota ora</button>
+                </div>
+                <div class="class-card">
+                    <img src="yoga-class-2.jpg" alt="Yoga Intermedio">
+                    <h3>Yoga Intermedio</h3>
+                    <p>Per chi ha già esperienza e vuole approfondire la pratica.</p>
+                    <button>Prenota ora</button>
+                </div>
+                <div class="class-card">
+                    <img src="yoga-class-3.jpg" alt="Meditazione">
+                    <h3>Meditazione Guidata</h3>
+                    <p>Rilassa la mente e ritrova la pace interiore con le nostre sessioni di meditazione.</p>
+                    <button>Prenota ora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contattaci</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="payment" class="payment">
+        <div class="container">
+            <h2>Paga la tua lezione</h2>
+            <p>Puoi prenotare e pagare la tua lezione di yoga direttamente online.</p>
+            
+            <!-- Pulsante PayPal -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <!-- Identificativo del venditore -->
+                <input type="hidden" name="business" value="tuo-email-paypal@example.com">
+                <!-- Tipo di pagamento -->
+                <input type="hidden" name="cmd" value="_xclick">
+                <!-- Nome dell'oggetto -->
+                <input type="hidden" name="item_name" value="Lezione di Yoga">
+                <!-- Valuta -->
+                <input type="hidden" name="currency_code" value="EUR">
+                <!-- Prezzo -->
+                <input type="hidden" name="amount" value="20.00">
+                <!-- Pulsante -->
+                <button type="submit">Paga con PayPal</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Studio Yoga. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
